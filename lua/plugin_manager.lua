@@ -7,6 +7,7 @@ local plugins = {
 	'folke/which-key.nvim',
 	'folke/neodev.nvim',
 	'j-hui/fidget.nvim',
+	'jose-elias-alvarez/null-ls.nvim',
 	{
 		'nvim-tree/nvim-tree.lua',
 		dependencies = {
