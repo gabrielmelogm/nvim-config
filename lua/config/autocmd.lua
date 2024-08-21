@@ -40,3 +40,4 @@ vim.api.nvim_create_autocmd('VimEnter', {
 		mason_autoinstall(linters)
 	end
 })
+
