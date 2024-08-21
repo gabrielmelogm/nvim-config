@@ -11,11 +11,6 @@
 nvim
 ```
 
-3. And run neovim command
-```bash
-:PlugInstall
-```
-
 ### Linux
 1. Clone this repo in <code>~/.config/nvim</code>
 
@@ -24,7 +19,3 @@ nvim
 nvim
 ```
 
-3. And run neovim command
-```bash
-:PlugInstall
-```
