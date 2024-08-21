@@ -6,6 +6,7 @@ local plugins = {
 	'folke/tokyonight.nvim',
 	'folke/which-key.nvim',
 	'folke/neodev.nvim',
+	'j-hui/fidget.nvim',
 	{
 		'nvim-tree/nvim-tree.lua',
 		dependencies = {
@@ -40,7 +41,7 @@ local plugins = {
 		-- build = "make install_jsregexp",
 		dependencies = {
 			'rafamadriz/friendly-snippets',
-			'saadparwaiz1/cmp_luasnip'
+			'saadparwaiz1/cmp_luasnip',
 		}
 	},
 	{

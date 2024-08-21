@@ -21,6 +21,7 @@ local mappings = {
 	}
 }
 
+
 map('n', 'ss', '<cmd>split<cr>')
 map('n', 'sv', '<cmd>vsplit<cr>')
 
