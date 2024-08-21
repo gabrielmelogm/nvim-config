@@ -8,6 +8,7 @@ local plugins = {
 	'folke/neodev.nvim',
 	'j-hui/fidget.nvim',
 	'jose-elias-alvarez/null-ls.nvim',
+	'nvim-lualine/lualine.nvim',
 	{
 		'nvim-tree/nvim-tree.lua',
 		dependencies = {
