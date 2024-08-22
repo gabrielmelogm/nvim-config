@@ -10,6 +10,7 @@ local plugins = {
 	"jose-elias-alvarez/null-ls.nvim",
 	"nvim-lualine/lualine.nvim",
 	"akinsho/toggleterm.nvim",
+	"hrsh7th/cmp-vsnip",
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
