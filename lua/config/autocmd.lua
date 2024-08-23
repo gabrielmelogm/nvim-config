@@ -14,7 +14,12 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		colorizer.setup({
 			"*",
 			css = {
-				rgb_fn = true,
+				css = true,
+				css_fn = true,
+				RGB = true,
+				RRGGBB = true,
+				names = true,
+				RRGGBBAA = true,
 			},
 			html = {
 				names = false,
