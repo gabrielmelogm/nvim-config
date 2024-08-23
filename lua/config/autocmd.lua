@@ -1,21 +1,31 @@
 -- Editor auto save
 -- vim.api.nvim_create_autocmd({ 'InsertLeave', 'TextChanged' }, {
-	-- pattern = '*.*',
-	-- command = 'update',
+-- pattern = '*.*',
+-- command = 'update',
 -- })
 
-vim.api.nvim_create_autocmd('VimEnter', {
-	pattern = '*',
+vim.api.nvim_create_autocmd("VimEnter", {
+	pattern = "*",
 	callback = function()
-		local formatters = require 'config.formatters'
-		local linters = require 'config.linters'
+		local formatters = require("config.formatters")
+		local linters = require("config.linters")
+		local colorizer = require("colorizer")
 
+		colorizer.setup({
+			"*",
+			css = {
+				rgb_fn = true,
+			},
+			html = {
+				names = false,
+			},
+		})
 
 		local function mason_autoinstall(packages)
-			local registry = require 'mason-registry'
+			local registry = require("mason-registry")
 
 			for _, pkg_name in ipairs(packages) do
-				if type(pkg_name) == 'table' then
+				if type(pkg_name) == "table" then
 					pkg_name = pkg_name.name
 				end
 
@@ -33,11 +43,9 @@ vim.api.nvim_create_autocmd('VimEnter', {
 					end
 				end
 			end
-
 		end
 
 		mason_autoinstall(formatters)
 		mason_autoinstall(linters)
-	end
+	end,
 })
-

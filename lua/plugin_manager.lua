@@ -12,6 +12,7 @@ local plugins = {
 	"akinsho/toggleterm.nvim",
 	"hrsh7th/cmp-vsnip",
 	"mg979/vim-visual-multi",
+	"norcalli/nvim-colorizer.lua",
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
