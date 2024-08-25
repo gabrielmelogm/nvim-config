@@ -1,5 +1,5 @@
-local mason = require 'mason-lspconfig'
+local mason = require("mason-lspconfig")
 
 mason.setup({
-	automatic_installation = true
+	automatic_installation = true,
 })

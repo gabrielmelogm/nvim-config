@@ -14,6 +14,14 @@ local plugins = {
 	"mg979/vim-visual-multi",
 	"norcalli/nvim-colorizer.lua",
 	{
+		"romgrk/barbar.nvim",
+		dependencies = {
+			"lewis6991/gitsigns.nvim",
+			"nvim-tree/nvim-web-devicons",
+		},
+		version = "^1.0.0",
+	},
+	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 		build = "cd app && yarn install",
