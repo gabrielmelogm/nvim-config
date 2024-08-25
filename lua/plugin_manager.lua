@@ -16,8 +16,8 @@ local plugins = {
 	{
 		"romgrk/barbar.nvim",
 		dependencies = {
-			"lewis6991/gitsigns.nvim",
 			"nvim-tree/nvim-web-devicons",
+			"lewis6991/gitsigns.nvim",
 		},
 		version = "^1.0.0",
 	},
