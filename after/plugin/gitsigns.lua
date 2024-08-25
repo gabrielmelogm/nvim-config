@@ -1,4 +1,5 @@
 local gitsigns = require("gitsigns")
+local wk = require("which-key")
 
 gitsigns.setup({
 	signs = {
@@ -49,3 +50,17 @@ gitsigns.setup({
 		col = 1,
 	},
 })
+
+wk.register({
+	g = {
+		name = "Gitsigns",
+		s = {
+			"<cmd>Gitsigns toggle_signs<cr>",
+			"Toggle Signs",
+		},
+		b = {
+			"<cmd>Gitsigns toggle_current_line_blame<cr>",
+			"Toggle Current Line Blame",
+		},
+	},
+}, { prefix = "<space>" })
