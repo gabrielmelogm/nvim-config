@@ -1,6 +1,7 @@
 local lspconfig = require 'lspconfig'
 local servers = require 'config.servers'
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local wk = require('which-key')
 
 for _, server in ipairs(servers) do
 	if server == 'lua_ls' then
@@ -20,10 +21,23 @@ for _, server in ipairs(servers) do
 	end
 end
 
-vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
+wk.register({
+	d = {
+		name = "Diagnostics",
+		h = {
+			":lua vim.diagnostic.open_float()<CR>", "Hover",
+		},
+		u = {
+			":lua vim.diagnostic.goto_prev()<CR>", "Go to previous",
+		},
+		i = {
+			":lua vim.diagnostic.goto_next()<CR>", "Go to next",
+		},
+		l = {
+			":lua vim.diagnostic.setloclist()<CR>", "Show list",
+		},
+	}
+}, { prefix = "<space>" })
 
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = vim.api.nvim_create_augroup('UserLspConfig', {}),

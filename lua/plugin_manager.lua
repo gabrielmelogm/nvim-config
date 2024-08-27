@@ -14,6 +14,7 @@ local plugins = {
 	"mg979/vim-visual-multi",
 	"norcalli/nvim-colorizer.lua",
 	"RRethy/vim-illuminate",
+	"onsails/lspkind.nvim",
 	{
 		"romgrk/barbar.nvim",
 		dependencies = {
