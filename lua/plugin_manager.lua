@@ -13,6 +13,7 @@ local plugins = {
 	"hrsh7th/cmp-vsnip",
 	"mg979/vim-visual-multi",
 	"norcalli/nvim-colorizer.lua",
+	"RRethy/vim-illuminate",
 	{
 		"romgrk/barbar.nvim",
 		dependencies = {
