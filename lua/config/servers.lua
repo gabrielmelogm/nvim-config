@@ -3,7 +3,8 @@ local servers = {
 	'html',
 	'cssls',
 	'lua_ls',
-	'tailwindcss'
+	'tailwindcss',
+	'gopls'
 }
 
 return servers
