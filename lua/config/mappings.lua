@@ -21,6 +21,8 @@ local mappings = {
 		name = 'Split',
 		h = { '<cmd>split<cr>', 'Horizontal split' },
 		v = { '<cmd>vsplit<cr>', 'Vertical split' },
+		u = { '<cmd>:wincmd h<cr>', 'Focus Previous' },
+		i = { '<cmd>:wincmd l<cr>', 'Focus Next' }
 	}
 }
 
