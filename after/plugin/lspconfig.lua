@@ -21,6 +21,14 @@ for _, server in ipairs(servers) do
 	end
 end
 
+local on_attach_tw = function(_, bufnr)
+	require("tailwindcss-colors").buf_attach(bufnr)
+end
+
+lspconfig["tailwindcss"].setup({
+	on_attach = on_attach_tw,
+})
+
 wk.register({
 	d = {
 		name = "Diagnostics",

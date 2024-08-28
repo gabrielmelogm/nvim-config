@@ -15,6 +15,7 @@ local plugins = {
 	"norcalli/nvim-colorizer.lua",
 	"RRethy/vim-illuminate",
 	"onsails/lspkind.nvim",
+	"themaxmarchuk/tailwindcss-colors.nvim",
 	{
 		"JoosepAlviste/nvim-ts-context-commentstring",
 		dependencies = {
