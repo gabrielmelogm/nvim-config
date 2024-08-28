@@ -1,9 +1,12 @@
 local lazy = require("lazy")
 
 local plugins = {
+	-- Themes
+	"folke/tokyonight.nvim",
+	-- "datsfilipe/min-theme.nvim",
+	--
 	"windwp/nvim-ts-autotag",
 	"windwp/nvim-autopairs",
-	"folke/tokyonight.nvim",
 	"folke/which-key.nvim",
 	"folke/neodev.nvim",
 	"j-hui/fidget.nvim",

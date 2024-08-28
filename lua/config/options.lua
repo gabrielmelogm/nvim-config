@@ -1,4 +1,5 @@
 vim.opt.cmdheight = 2
+vim.opt.number = true
 vim.opt.guifont = "monospace:h17"
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
