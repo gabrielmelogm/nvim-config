@@ -1,5 +1,5 @@
 local toggleterm = require("toggleterm")
-local wk = require('which-key')
+local wk = require("which-key")
 
 toggleterm.setup({
 	size = 20,
@@ -25,14 +25,10 @@ toggleterm.setup({
 	},
 })
 
-wk.register({
-	t = {
-		name = "Terminal",
-		t = {
-			"<cmd>ToggleTerm<cr>", "Toggle Terminal",
-		},
-		v = {
-			"<cmd>ToggleTerm direction=vertical size=60<cr>", "Toggle Terminal Vertical",
-		},
-	}
-}, { prefix = "<space>" })
+wk.add({
+	{ "<Space>t", group = "Terminal" },
+	{ "<Space>tt", "<cmd>ToggleTerm<cr>", desc = "Toggle Terminal" },
+	{ "<Space>tv", "<cmd>ToggleTerm direction=vertical size=60<cr>", desc = "Toggle Terminal Vertical" },
+}, {
+	mode = { "n" },
+})

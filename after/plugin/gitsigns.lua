@@ -51,16 +51,10 @@ gitsigns.setup({
 	},
 })
 
-wk.register({
-	g = {
-		name = "Gitsigns",
-		s = {
-			"<cmd>Gitsigns toggle_signs<cr>",
-			"Toggle Signs",
-		},
-		b = {
-			"<cmd>Gitsigns toggle_current_line_blame<cr>",
-			"Toggle Current Line Blame",
-		},
-	},
-}, { prefix = "<space>" })
+wk.add({
+	{ "<Space>g", group = "Gitsigns" },
+	{ "<Space>gs", "<cmd>Gitsigns toggle_signs<cr>", group = "Toggle Signs" },
+	{ "<Space>gb", "<cmd>Gitsigns toggle_current_line_blame<cr>", group = "Toggle Current Line Blame" },
+}, {
+	mode = { "n" },
+})
