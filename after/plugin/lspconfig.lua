@@ -22,7 +22,10 @@ for _, server in ipairs(servers) do
 end
 
 local on_attach_tw = function(_, bufnr)
-	require("tailwindcss-colors").buf_attach(bufnr)
+	local tailwindcss_colors = require("tailwindcss-colors")
+	if tailwindcss_colors then
+		tailwindcss_colors.buf_attach(bufnr)
+	end
 end
 
 lspconfig["tailwindcss"].setup({
@@ -76,15 +79,17 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 		local lsp_hover_group = vim.api.nvim_create_augroup("UserLspHover", { clear = true })
 
-		vim.api.nvim_create_autocmd("CursorHold", {
-			group = lsp_hover_group,
-			pattern = "<buffer>",
-			callback = function()
-				if vim.lsp.buf.hover then
-					vim.lsp.buf.hover()
-				end
-			end,
-		})
+		-- vim.api.nvim_create_autocmd("CursorHold", {
+		-- 	group = lsp_hover_group,
+		-- 	pattern = "<buffer>",
+		-- 	callback = function()
+		-- 		if vim.lsp.buf.hover then
+		-- 			vim.lsp.buf.hover()
+		-- 		else
+		-- 			return
+		-- 		end
+		-- 	end,
+		-- })
 	end,
 })
 
