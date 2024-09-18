@@ -19,14 +19,15 @@ local plugins = {
 	"RRethy/vim-illuminate",
 	"onsails/lspkind.nvim",
 	"themaxmarchuk/tailwindcss-colors.nvim",
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl" },
 	{
 		"JoosepAlviste/nvim-ts-context-commentstring",
 		dependencies = {
 			"b3nj5m1n/kommentary",
 			"terrortylor/nvim-comment",
 			"numToStr/Comment.nvim",
-			"tpope/vim-commentary"
-		}
+			"tpope/vim-commentary",
+		},
 	},
 	{
 		"romgrk/barbar.nvim",
