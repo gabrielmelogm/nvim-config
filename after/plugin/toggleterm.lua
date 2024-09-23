@@ -12,11 +12,10 @@ toggleterm.setup({
 	persist_size = true,
 	direction = "float",
 	close_on_exit = true,
-	shell = "pwsh",
 	float_opts = {
 		border = "curved",
-		width = 80,
-		height = 20,
+		width = 120,
+		height = 40,
 		winblend = 3,
 		highlights = {
 			border = "Normal",
