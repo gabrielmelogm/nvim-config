@@ -6,6 +6,7 @@ local plugins = {
 	"datsfilipe/min-theme.nvim",
 	"olimorris/onedarkpro.nvim",
 	"Mofiqul/dracula.nvim",
+	"tiagovla/tokyodark.nvim",
 	--
 	"windwp/nvim-ts-autotag",
 	"windwp/nvim-autopairs",
