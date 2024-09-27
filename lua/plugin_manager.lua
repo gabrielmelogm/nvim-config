@@ -4,6 +4,7 @@ local plugins = {
 	-- Themes
 	"folke/tokyonight.nvim",
 	"datsfilipe/min-theme.nvim",
+	"olimorris/onedarkpro.nvim",
 	--
 	"windwp/nvim-ts-autotag",
 	"windwp/nvim-autopairs",
