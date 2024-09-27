@@ -3,7 +3,7 @@ local lazy = require("lazy")
 local plugins = {
 	-- Themes
 	"folke/tokyonight.nvim",
-	-- "datsfilipe/min-theme.nvim",
+	"datsfilipe/min-theme.nvim",
 	--
 	"windwp/nvim-ts-autotag",
 	"windwp/nvim-autopairs",
