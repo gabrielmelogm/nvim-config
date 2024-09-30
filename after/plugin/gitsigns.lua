@@ -52,7 +52,7 @@ gitsigns.setup({
 })
 
 wk.add({
-	{ "<Space>g", group = "Gitsigns" },
+	{ "<Space>g", group = "Git" },
 	{ "<Space>gs", "<cmd>Gitsigns toggle_signs<cr>", group = "Toggle Signs" },
 	{ "<Space>gb", "<cmd>Gitsigns toggle_current_line_blame<cr>", group = "Toggle Current Line Blame" },
 }, {

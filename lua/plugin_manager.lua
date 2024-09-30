@@ -22,6 +22,7 @@ local plugins = {
 	"RRethy/vim-illuminate",
 	"onsails/lspkind.nvim",
 	"themaxmarchuk/tailwindcss-colors.nvim",
+	"sindrets/diffview.nvim",
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl" },
 	{
 		"JoosepAlviste/nvim-ts-context-commentstring",
