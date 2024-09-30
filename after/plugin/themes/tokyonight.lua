@@ -1,1 +1,3 @@
--- vim.cmd 'colorscheme tokyonight-night'
+local tokyonight = require("tokyonight")
+
+tokyonight.setup()
