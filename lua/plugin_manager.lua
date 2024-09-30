@@ -23,6 +23,14 @@ local plugins = {
 	"onsails/lspkind.nvim",
 	"themaxmarchuk/tailwindcss-colors.nvim",
 	"sindrets/diffview.nvim",
+	{
+		"ibhagwan/fzf-lua",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
+	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl" },
 	{
 		"JoosepAlviste/nvim-ts-context-commentstring",

@@ -5,11 +5,11 @@ local mappings = {
 	{ "<Space>w", "<cmd>update<cr>", desc = "Save" },
 
 	{ "<Space>f", group = "Find" },
-	{ "<Space>ff", "<cmd>Telescope find_files<cr>", desc = "Files" },
-	{ "<Space>fw", "<cmd>Telescope live_grep<cr>", desc = "Words" },
-	{ "<Space>fk", "<cmd>Telescope keymaps<cr>", desc = "Keymaps" },
-	{ "<Space>fh", "<cmd>Telescope help_tags<cr>", desc = "Help Tags" },
-	{ "<Space>fc", "<cmd>Telescope commands<cr>", desc = "Commands" },
+	{ "<Space>ff", "<cmd>FzfLua files<cr>", desc = "Files" },
+	{ "<Space>fw", "<cmd>FzfLua live_grep<cr>", desc = "Words" },
+	{ "<Space>fk", "<cmd>FzfLua keymaps<cr>", desc = "Keymaps" },
+	{ "<Space>fh", "<cmd>FzfLua helptags<cr>", desc = "Help Tags" },
+	{ "<Space>fc", "<cmd>FzfLua colorschemes<cr>", desc = "Colorschemes" },
 
 	{ "<Space>p", group = "Package manager" },
 	{ "<Space>pp", "<cmd>Mason<cr>", desc = "Open Package Manager" },
