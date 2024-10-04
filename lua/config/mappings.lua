@@ -10,6 +10,7 @@ local mappings = {
 	{ "<Space>fk", "<cmd>FzfLua keymaps<cr>", desc = "Keymaps" },
 	{ "<Space>fh", "<cmd>FzfLua helptags<cr>", desc = "Help Tags" },
 	{ "<Space>fc", "<cmd>FzfLua colorschemes<cr>", desc = "Colorschemes" },
+	{ "<Space>ft", "<cmd>TodoFzfLua<cr>", desc = "Todo List" },
 
 	{ "<Space>p", group = "Package manager" },
 	{ "<Space>pp", "<cmd>Mason<cr>", desc = "Open Package Manager" },
