@@ -24,6 +24,15 @@ local plugins = {
 	"themaxmarchuk/tailwindcss-colors.nvim",
 	"sindrets/diffview.nvim",
 	{
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+		build = "cd app && yarn install",
+		init = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	},
+	{
 		"ibhagwan/fzf-lua",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
@@ -48,15 +57,6 @@ local plugins = {
 			"lewis6991/gitsigns.nvim",
 		},
 		version = "^1.0.0",
-	},
-	{
-		"iamcco/markdown-preview.nvim",
-		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-		build = "cd app && yarn install",
-		init = function()
-			vim.g.mkdp_filetypes = { "markdown" }
-		end,
-		ft = { "markdown" },
 	},
 	{
 		"nvim-tree/nvim-tree.lua",

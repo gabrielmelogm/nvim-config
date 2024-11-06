@@ -22,6 +22,9 @@ local mappings = {
 	{ "<Space>sv", "<cmd>vsplit<cr>", desc = "Vertical split" },
 	{ "<Space>su", "<cmd>:wincmd h<cr>", desc = "Focus Previous" },
 	{ "<Space>si", "<cmd>:wincmd l<cr>", desc = "Focus Next" },
+
+	{ "<Space>m", group = "Markdown" },
+	{ "<Space>mp", "<cmd>MarkdownPreview<cr>", desc = "Open Markdown Preview" }
 }
 
 return mappings

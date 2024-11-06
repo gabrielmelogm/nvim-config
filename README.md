@@ -18,4 +18,3 @@ nvim
 ```bash
 nvim
 ```
-
