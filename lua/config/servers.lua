@@ -5,7 +5,8 @@ local servers = {
 	'lua_ls',
 	'gopls',
 	'dockerls',
-	'docker_compose_language_service'
+	'eslint',
+	'volar',
 }
 
 return servers

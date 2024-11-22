@@ -1,5 +1,3 @@
-local linters = {
-	'eslint_d'
-}
+local linters = {}
 
 return linters
