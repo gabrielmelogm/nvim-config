@@ -24,7 +24,9 @@ local mappings = {
 	{ "<Space>si", "<cmd>:wincmd l<cr>", desc = "Focus Next" },
 
 	{ "<Space>m", group = "Markdown" },
-	{ "<Space>mp", "<cmd>MarkdownPreview<cr>", desc = "Open Markdown Preview" }
+	{ "<Space>mp", "<cmd>MarkdownPreview<cr>", desc = "Open Markdown Preview" },
+
+	{ "<Space>dd", "<cmd>Dashboard<cr>", desc = "Show dashboard" }
 }
 
 return mappings

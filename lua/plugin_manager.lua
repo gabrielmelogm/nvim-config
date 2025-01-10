@@ -24,6 +24,11 @@ local plugins = {
 	"themaxmarchuk/tailwindcss-colors.nvim",
 	"sindrets/diffview.nvim",
 	{
+		"nvimdev/dashboard-nvim",
+		event = "VimEnter",
+		dependencies = {{ "nvim-tree/nvim-web-devicons" }}
+	},
+	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 		build = "cd app && yarn install",
