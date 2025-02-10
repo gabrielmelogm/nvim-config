@@ -3,7 +3,6 @@ local servers = {
 	'html',
 	'cssls',
 	'lua_ls',
-	'gopls',
 	'dockerls',
 	'eslint',
 	'volar',
